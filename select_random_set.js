@@ -2,7 +2,7 @@ $(window).on("load", function(){
     $("#select_random").on("click", function(){
         let maxCount = Number($("#max_count").val());
         let selectCount = $("#select_count").val();
-        let result = random(Array.from(new Array(maxCount - 1)).map((v,i)=> i + 1), selectCount);
+        let result = random(Array.from(new Array(maxCount)).map((v,i)=> i + 1), selectCount);
         $("#result_num").text(result)
     });
 });
